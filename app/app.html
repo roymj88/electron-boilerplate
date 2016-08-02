@@ -2,10 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Electron Boilerplate</title>
+    <title>Electron | Sample for Jayan</title>
 
     <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="helpers/context_menu.js"></script>
     <script src="helpers/external_links.js"></script>
 
@@ -14,13 +17,56 @@
 <body>
 
     <div class="container">
-        <h1 id="greet"></h1>
-        <p class="subtitle">
-            Welcome to <a href="http://electron.atom.io" class="js-external-link">Electron</a> app running on this magnificent <strong id="platform-info"></strong> machine.
-        </p>
-        <p class="subtitle">
-            You are in <strong id="env-name"></strong> environment.
-        </p>
+        
+      <div class="container">
+        <div class="row">
+
+          <h3>Hello Jayan, please enter the data that you want to save!</h3>
+
+          <form role="form">
+            
+            <div class="form-group">
+              <label for="firstname">First Name</label>
+              <input type="firstname" class="form-control firstname" id="firstname">
+            </div>
+
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input type="lastname" class="form-control lastname" id="lastname">
+            </div>
+
+            <button type="button" class="btn btn-default submit">Submit</button>
+          </form>
+          
+        </div>
+      </div>
+
+      <hr/>
+      
+      <div class="container">
+        <div class="row">
+
+          <table class="table list table-hover">
+            <thead>
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <hr/>
+
+      <div class="well">
+        <h3>Technologies Used</h3>
+        Electron, Node, Javascript, Bootstrap 
+      </div>
+
+  
     </div>
 
 </body>
